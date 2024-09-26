@@ -25,7 +25,7 @@ class TradingStrategy(Strategy):
 
         # Get the latest data for calculation
         ohlcv_data = data["ohlcv"]
-        current_price = ohlcv_data[-L"]["close"]
+        current_price = ohlcv_data["-L"]["close"]
         sma_values = SMA("AAPL", ohlcv_data, self.sma_length)
         rsi_values = RSI("AAPL", ohlcv_data, self.rsi_length)
 
