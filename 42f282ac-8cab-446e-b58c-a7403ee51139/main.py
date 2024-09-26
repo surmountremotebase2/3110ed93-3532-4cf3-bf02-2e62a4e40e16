@@ -6,7 +6,7 @@ class TradingStrategy(Strategy):
     def __init__(self):
         # Tickers of interest
         self.tickers = ["AAPL"]
-        self.sma14  # Length for SMA calculation
+        self.sma14 = 14 # Length for SMA calculation
         self.rsi_length = 14  # Length for RSI calculation
         self.oversold_threshold = 30  # RSI threshold for oversold condition.overbought_threshold = 70  # RSI threshold for overbought condition
 
