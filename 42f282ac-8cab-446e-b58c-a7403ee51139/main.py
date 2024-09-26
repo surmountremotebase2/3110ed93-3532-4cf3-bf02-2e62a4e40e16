@@ -1,5 +1,5 @@
 from surmount.base_class import Strategy, TargetAllocation
-from surmount.technical_indicators import RSI SMA
+from surmount.technical_indicators import RSI, SMA
 from surmount.logging import log
 
 class TradingStrategy(Strategy):
